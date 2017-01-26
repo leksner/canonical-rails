@@ -9,7 +9,7 @@ module CanonicalRails
     end
 
     def path_without_html_extension
-      request.path.sub(/\.html$/, '')
+      request.path.sub(/\.html$/, '').downcase
     end
 
     def canonical_protocol
